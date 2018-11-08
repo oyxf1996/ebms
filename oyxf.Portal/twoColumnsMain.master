@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="twoColumnsMain.master.cs" Inherits="oyxf.Portal.twoColumnsMain" %>
+
+<asp:Content ID="ScriptStyle" ContentPlaceHolderID="ScriptStyle" runat="server">
+    <link href="/css/HituxBlue/inner.css" rel="stylesheet" />
+</asp:Content>
+<asp:Content ID="content" ContentPlaceHolderID="content" runat="server">
+    <div id="body">
+        <!--focus start-->
+        <div id="InnerBanner">
+        </div>
+        <!--foncus end-->
+        <div class="HeightTab clearfix"></div>
+        <!--inner start -->
+        <div class="inner">
+            <!--left start-->
+            <div class="left">
+                <div class="Sbox">
+                    <asp:ContentPlaceHolder ID="leftTop" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="HeightTab clearfix"></div>
+                <div class="Sbox">
+                    <asp:ContentPlaceHolder ID="leftCenter" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="HeightTab clearfix"></div>
+                <div class="Sbox">
+                    <asp:ContentPlaceHolder ID="leftBottom" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!--left end-->
+            <!--right start-->
+            <div class="right">
+                <div class="Position"><span>你的位置：<a href="/Index">首页</a><%=base.titleIndex %></span></div>
+                <div class="HeightTab clearfix"></div>
+                <!--main start-->
+                <div class="main">
+                    <!--content start-->
+                    <asp:ContentPlaceHolder ID="right" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <!--content end-->
+
+            </div>
+            <!--main end-->
+        </div>
+        <!--right end-->
+    </div>
+</asp:Content>

@@ -1,0 +1,92 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="oyxf.Portal.main" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>慧谷动力-专注精品源码，尊享顶级服务！</title>
+    <meta name="keywords" content="慧谷动力-专注精品源码，尊享顶级服务！" />
+    <meta name="description" content="慧谷动力-专注精品源码，尊享顶级服务！">
+    <link href="/css/HituxBlue/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/HituxBlue/common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/functions.js"></script>
+    <script type="text/javascript" src="/images/iepng/iepngfix_tilebg.js"></script>
+
+    <asp:ContentPlaceHolder ID="ScriptStyle" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+
+            <!--head start-->
+            <div id="head">
+
+                <!--top start -->
+                <div class="top">
+                    <div class="TopInfo">
+                        <div class="link"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://127.0.0.1/');" href="#">设为首页</a> | <a href="javascript:window.external.AddFavorite('http://127.0.0.1/','慧谷动力-专注精品源码，尊享顶级服务！')">加入收藏</a> | <a href="/Sitemap/">网站地图</a></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="TopLogo">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="/images/up_images/2013222145444.png" alt="慧谷动力-专注精品源码，尊享顶级服务！" /></a>
+                        </div>
+                        <div class="tel">
+                            <p class="telW">全国服务热线</p>
+                            <p class="telN">400-888-888</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--top end-->
+
+                <!--nav start-->
+                <div id="NavLink">
+                    <div class="NavBG">
+                        <!--Head Menu Start-->
+                        <%=base.NavigatorContent %>
+                        <!--Head Menu End-->
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--nav end-->
+
+            </div>
+            <!--head end-->
+
+
+            <div id="body">
+                <asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+
+
+            <div class="HeightTab clearfix"></div>
+            <!--footer start-->
+            <div id="footer">
+                <div class="inner">
+                    <p>
+                        Copyright   2009-2013 <a href="http://www.huiguer.com/" target="_blank">慧谷动力</a> 技术支持 All rights reserved
+                        <br />
+                        <a href="http://www.huiguer.com/" target="_blank">慧谷动力</a>
+                        <a href="/rss" target="_blank">
+                            <img src="/images/rss_icon.gif" />
+                        </a>
+                        <a href="/rss/feed.xml" target="_blank">
+                            <img src="/images/xml_icon.gif" />
+                        </a>
+                        <a href="http://www.huiguer.com/" target="_blank">企业网站模板</a>
+                    </p>
+                </div>
+            </div>
+            <!--footer end -->
+        </div>
+    </form>
+</body>
+</html>

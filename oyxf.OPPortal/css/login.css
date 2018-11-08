@@ -1,0 +1,86 @@
+﻿body,tr,td{
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:#eaeaea;
+    font-size:small;
+}
+#box{
+    width:400px;
+    height:300px;
+    position:absolute;
+    -webkit-transform: translate(-50%,-60%);
+    -moz-transform: translate(-50%,-60%);
+    transform:translate(-50%,-60%);
+    top:50%;
+    left:50%;
+    border-radius:10px;
+    background-color:rgba(255, 255, 255,.5);
+	box-shadow:0 5px 10px rgba(128,128,128,.5);
+    text-align:center;
+}
+.fontH{
+    margin-top:35px;
+}
+
+#UserInfoTable{
+    width:280px;
+    margin:0 auto;
+}
+#UserInfoTable tr,#UserInfoTable tr td{
+    height:35px;
+    line-height:35px;
+}
+
+#UserInfoTable tr td:nth-child(1){
+    text-align:right;
+    width:80px;
+}
+#UserInfoTable tr td:nth-child(2){
+    text-align:left;
+    width:200px;
+}
+
+#username,#password,#checkcode{
+    width:200px;
+    height:20px;
+    padding-left:5px;
+}
+.myFont{
+    font-size:1.2em;
+    text-align:center;
+}
+#btnload{
+    width:260px;
+    height:35px;
+    background-color:#00AFE4;
+    border:none;
+    box-shadow:0 2px 2px rgba(128,128,128,.5);
+}
+#checkcode{
+    width:50px;
+    top: -5px;
+    position: relative;
+}
+.imgStyle{
+    display:inline-block;
+    position:relative;
+    top:7px;
+    left:5px;
+}
+.imgStyle:hover{
+    cursor:pointer;
+}
+#btnload:hover{
+    cursor:pointer;
+}
+
+.toGreen{
+    color:green;
+    margin-left:5px;
+}
+.toRed{
+    color:red;
+    margin-left:5px;
+}
